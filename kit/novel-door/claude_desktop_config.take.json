@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "novel_door": {
+      "command": "C:\\Dev\\novel-door\\.venv\\Scripts\\python.exe",
+      "args": ["C:\\Dev\\novel-door\\server.py"],
+      "env": {
+        "NOVEL_SSOT": "C:\\Dev\\novel-ssot",
+        "NOVEL_REPO": "DamianGiambazi/novel-ssot",
+        "NOVEL_GITHUB_PROVIDER": "novel-door-github",
+        "ARCADE_USAGE_TRACKING": "0",
+        "HF_HUB_OFFLINE": "1"
+      }
+    }
+  }
+}

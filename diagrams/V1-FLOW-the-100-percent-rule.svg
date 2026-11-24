@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">
+<title>Vault 1 · The 100% Rule: data flow: Documents in, one cited answer out. Each step is checked before the next one may run.</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5B6472"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#B42A2A"/></marker><marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#B4532A"/></marker></defs>
+<rect width="1600" height="900" fill="#FAF8F4"/>
+<text x="60" y="62" font-size="32" font-weight="700" fill="#1F2430">Vault 1 · The 100% Rule: data flow</text>
+<text x="60" y="94" font-size="19" fill="#5B6472">Documents in, one cited answer out. Each step is checked before the next one may run.</text>
+<text x="1540" y="58" text-anchor="end" font-size="19" font-style="italic" fill="#1F2430">Write the answer down</text>
+<text x="1540" y="84" text-anchor="end" font-size="19" font-style="italic" fill="#1F2430">before you run it.</text>
+<rect x="60" y="150" width="310" height="130" rx="12" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+<text x="215.0" y="191" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">input\</text>
+<text x="215.0" y="220" text-anchor="middle" font-size="15" fill="#5B6472">your .txt documents</text>
+<text x="215.0" y="241" text-anchor="middle" font-size="15" fill="#5B6472">+ question.txt (one sentence,</text>
+<text x="215.0" y="262" text-anchor="middle" font-size="15" fill="#5B6472">worded unlike the text)</text>
+<rect x="450" y="150" width="310" height="130" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="605.0" y="191" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">vector-snake 2.0</text>
+<text x="605.0" y="220" text-anchor="middle" font-size="15" fill="#1F2430">cuts each file into passages</text>
+<text x="605.0" y="241" text-anchor="middle" font-size="15" fill="#1F2430">turns each into 384 numbers</text>
+<text x="605.0" y="262" text-anchor="middle" font-size="15" fill="#1F2430">question in the SAME run</text>
+<rect x="840" y="150" width="310" height="130" rx="12" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+<text x="995.0" y="191" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">vectors\</text>
+<text x="995.0" y="220" text-anchor="middle" font-size="15" fill="#5B6472">*_vectors.csv: text + numbers</text>
+<text x="995.0" y="241" text-anchor="middle" font-size="15" fill="#5B6472">*_manifest.json: one per file</text>
+<text x="995.0" y="262" text-anchor="middle" font-size="15" fill="#5B6472">*_run_manifest.json: the run</text>
+<rect x="1230" y="150" width="310" height="130" rx="12" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+<text x="1385.0" y="191" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">Hugging Face cache</text>
+<text x="1385.0" y="220" text-anchor="middle" font-size="15" fill="#5B6472">all-MiniLM-L6-v2</text>
+<text x="1385.0" y="241" text-anchor="middle" font-size="15" fill="#5B6472">the translator, used offline</text>
+<text x="1385.0" y="262" text-anchor="middle" font-size="15" fill="#5B6472">hf CLI 2.2.0 shows what&#x27;s there</text>
+<path d="M370 215 L442 215" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M760 215 L832 215" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1385.0 280 L1385.0 320 L665.0 320 L665.0 288" fill="none" stroke="#5B6472" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#a)"/>
+<text x="1365.0" y="342" text-anchor="end" font-size="15" fill="#5B6472">the model, read from disk (--offline)</text>
+<rect x="840" y="400" width="310" height="130" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="995.0" y="441" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">DuckDB · audit.sql</text>
+<text x="995.0" y="470" text-anchor="middle" font-size="15" fill="#1F2430">the gate: 1 run · 0 failed</text>
+<text x="995.0" y="491" text-anchor="middle" font-size="15" fill="#1F2430">1 model · 1 size · 1 question</text>
+<text x="995.0" y="512" text-anchor="middle" font-size="14" font-family="Cascadia Mono, Consolas, Menlo, monospace" fill="#1F2430">AUDIT_PASS  EXPORT_OK</text>
+<rect x="450" y="400" width="310" height="130" rx="12" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+<text x="605.0" y="441" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">corpus.parquet</text>
+<text x="605.0" y="470" text-anchor="middle" font-size="15" fill="#5B6472">+ question.parquet</text>
+<text x="605.0" y="491" text-anchor="middle" font-size="15" fill="#5B6472">clean evidence, typed vectors</text>
+<text x="605.0" y="512" text-anchor="middle" font-size="15" fill="#5B6472">written only if the gate passed</text>
+<rect x="1230" y="400" width="310" height="130" rx="12" fill="#FCEDED" stroke="#B42A2A" stroke-width="2"/>
+<text x="1385.0" y="441" text-anchor="middle" font-size="21" font-weight="700" fill="#8E1F1F">AUDIT_FAIL</text>
+<text x="1385.0" y="470" text-anchor="middle" font-size="15" fill="#8E1F1F">e.g. runs=2 or question_rows=2</text>
+<text x="1385.0" y="491" text-anchor="middle" font-size="15" fill="#8E1F1F">nothing is exported:</text>
+<text x="1385.0" y="512" text-anchor="middle" font-size="15" fill="#8E1F1F">the next step can&#x27;t run</text>
+<rect x="60" y="400" width="310" height="130" rx="12" fill="#FFF4EE" stroke="#B4532A" stroke-width="2.5"/>
+<text x="215.0" y="441" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">The 100% Rule</text>
+<text x="215.0" y="470" text-anchor="middle" font-size="15" fill="#5B6472">“Are you 100% ready to execute</text>
+<text x="215.0" y="491" text-anchor="middle" font-size="15" fill="#5B6472">the prompt, or do you need</text>
+<text x="215.0" y="512" text-anchor="middle" font-size="15" fill="#5B6472">more information?”</text>
+<path d="M995.0 280 L995.0 392" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M840 465 L768 465" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1150 465 L1222 465" fill="none" stroke="#B42A2A" stroke-width="2.5" marker-end="url(#r)"/>
+<text x="1190.0" y="455" text-anchor="middle" font-size="15" fill="#B42A2A">fail</text>
+<rect x="40" y="582" width="1130" height="186" rx="16" fill="#EEF2F7" stroke="#8A94A6" stroke-width="1.5" stroke-dasharray="9 7"/>
+<text x="1152" y="606" text-anchor="end" font-size="14" font-weight="600" letter-spacing="1" fill="#5B6472">capstone_rag.py · Vault 1&#x27;s smoke-lab venv</text>
+<rect x="60" y="620" width="310" height="130" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="215.0" y="661" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">LanceDB 0.40.0</text>
+<text x="215.0" y="690" text-anchor="middle" font-size="15" fill="#1F2430">question vs every passage</text>
+<text x="215.0" y="711" text-anchor="middle" font-size="15" fill="#1F2430">3 closest passages</text>
+<text x="215.0" y="732" text-anchor="middle" font-size="15" fill="#1F2430">(temp table, deleted after)</text>
+<rect x="450" y="620" width="310" height="130" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="605.0" y="661" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">Ollama</text>
+<text x="605.0" y="690" text-anchor="middle" font-size="15" fill="#1F2430">smollm2:360m-instruct-q8_0</text>
+<text x="605.0" y="711" text-anchor="middle" font-size="15" fill="#1F2430">reads only those 3 passages</text>
+<text x="605.0" y="732" text-anchor="middle" font-size="14" font-family="Cascadia Mono, Consolas, Menlo, monospace" fill="#1F2430">{answer, source_id}</text>
+<rect x="840" y="620" width="310" height="130" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="995.0" y="661" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">4 checks</text>
+<text x="995.0" y="690" text-anchor="middle" font-size="15" fill="#1F2430">schema · citation</text>
+<text x="995.0" y="711" text-anchor="middle" font-size="15" fill="#1F2430">grounding · canary</text>
+<text x="995.0" y="732" text-anchor="middle" font-size="15" fill="#1F2430">(the cited passage holds the fact)</text>
+<rect x="1230" y="620" width="310" height="130" rx="12" fill="#1F2430" stroke="#1F2430" stroke-width="2"/>
+<text x="1385.0" y="661" text-anchor="middle" font-size="21" font-weight="700" fill="#FFFFFF">CAPSTONE_OK</text>
+<text x="1385.0" y="690" text-anchor="middle" font-size="15" fill="#D7DCE4">answer: “15 years”</text>
+<text x="1385.0" y="711" text-anchor="middle" font-size="15" fill="#D7DCE4">cites notes_0652_0001</text>
+<text x="1385.0" y="732" text-anchor="middle" font-size="15" fill="#D7DCE4">~50 s on SPOOKY</text>
+<path d="M605.0 530 L605.0 568 L215.0 568 L215.0 612" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M370 685 L442 685" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M760 685 L832 685" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1150 685 L1222 685" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="840" y="778" width="310" height="62" rx="12" fill="#FFF4EE" stroke="#B4532A" stroke-width="2.5"/>
+<text x="995.0" y="804" text-anchor="middle" font-size="17" font-weight="700" fill="#1F2430">CAPSTONE_CANARY</text>
+<text x="995.0" y="832" text-anchor="middle" font-size="14" fill="#5B6472">written BEFORE the run: the expected fact</text>
+<path d="M995.0 778 L995.0 758" fill="none" stroke="#B4532A" stroke-width="2.5" marker-end="url(#o)"/>
+<rect x="60" y="853" width="22" height="16" rx="4" fill="#FFFFFF" stroke="#8A94A6" stroke-width="1.5"/>
+<text x="90" y="866" text-anchor="start" font-size="14" fill="#5B6472">files and evidence</text>
+<rect x="236.79999999999998" y="853" width="22" height="16" rx="4" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="1.5"/>
+<text x="266.79999999999995" y="866" text-anchor="start" font-size="14" fill="#5B6472">a tool runs</text>
+<rect x="360.4" y="853" width="22" height="16" rx="4" fill="#FFF4EE" stroke="#B4532A" stroke-width="1.5"/>
+<text x="390.4" y="866" text-anchor="start" font-size="14" fill="#5B6472">you decide or write first</text>
+<rect x="590.4" y="853" width="22" height="16" rx="4" fill="#1F2430" stroke="#1F2430" stroke-width="1.5"/>
+<text x="620.4" y="866" text-anchor="start" font-size="14" fill="#5B6472">a verdict word</text>
+<rect x="736.8" y="853" width="22" height="16" rx="4" fill="#FCEDED" stroke="#B42A2A" stroke-width="1.5"/>
+<text x="766.8" y="866" text-anchor="start" font-size="14" fill="#5B6472">fails closed</text>
+</svg>

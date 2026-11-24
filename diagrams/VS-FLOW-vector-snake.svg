@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">
+<title>vector-snake 2.0 · inside one run: Local only. Cut by structure, translate by meaning, audit everything, fail closed.</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5B6472"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#B42A2A"/></marker><marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#B4532A"/></marker></defs>
+<rect width="1600" height="900" fill="#FAF8F4"/>
+<text x="60" y="62" font-size="32" font-weight="700" fill="#1F2430">vector-snake 2.0 · inside one run</text>
+<text x="60" y="94" font-size="19" fill="#5B6472">Local only. Cut by structure, translate by meaning, audit everything, fail closed.</text>
+<text x="1540" y="58" text-anchor="end" font-size="19" font-style="italic" fill="#1F2430">We cut by structure.</text>
+<text x="1540" y="84" text-anchor="end" font-size="19" font-style="italic" fill="#1F2430">We search by meaning.</text>
+<rect x="40" y="140" width="272" height="118" rx="12" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+<text x="176.0" y="175" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">input folder</text>
+<text x="176.0" y="204" text-anchor="middle" font-size="15" fill="#5B6472">.txt and .md in the vaults</text>
+<text x="176.0" y="225" text-anchor="middle" font-size="15" fill="#5B6472">also docx, pdf, html, csv,</text>
+<text x="176.0" y="246" text-anchor="middle" font-size="15" fill="#5B6472">json, eml… (own extractors)</text>
+<rect x="352" y="140" width="272" height="118" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="488.0" y="175" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">extract + decode</text>
+<text x="488.0" y="204" text-anchor="middle" font-size="15" fill="#1F2430">text out of each format</text>
+<text x="488.0" y="225" text-anchor="middle" font-size="15" fill="#1F2430">encoding detected</text>
+<text x="488.0" y="246" text-anchor="middle" font-size="15" fill="#1F2430">source sha256 recorded</text>
+<rect x="664" y="140" width="272" height="118" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="800.0" y="175" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">normalize</text>
+<text x="800.0" y="204" text-anchor="middle" font-size="15" fill="#1F2430">line endings → \n</text>
+<text x="800.0" y="225" text-anchor="middle" font-size="15" fill="#1F2430">NBSP → space · Unicode NFC</text>
+<text x="800.0" y="246" text-anchor="middle" font-size="15" fill="#1F2430">(--join-hard-wraps: opt-in)</text>
+<rect x="976" y="140" width="272" height="118" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="1112.0" y="175" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">atomize (recursive)</text>
+<text x="1112.0" y="204" text-anchor="middle" font-size="15" fill="#1F2430">paragraph → line → sentence</text>
+<text x="1112.0" y="225" text-anchor="middle" font-size="15" fill="#1F2430">→ word → character</text>
+<text x="1112.0" y="246" text-anchor="middle" font-size="15" fill="#1F2430">only where a piece is too big</text>
+<rect x="1288" y="140" width="272" height="118" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="1424.0" y="175" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">pack</text>
+<text x="1424.0" y="204" text-anchor="middle" font-size="15" fill="#1F2430">atoms joined up to --max-chars</text>
+<text x="1424.0" y="225" text-anchor="middle" font-size="15" fill="#1F2430">(1000 default · 800 in Vault 2)</text>
+<text x="1424.0" y="246" text-anchor="middle" font-size="15" fill="#1F2430">pieces &lt; 40 chars merged</text>
+<path d="M312 199 L344 199" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M624 199 L656 199" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M936 199 L968 199" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1248 199 L1280 199" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="1288" y="330" width="272" height="118" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="1424.0" y="365" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">base spans</text>
+<text x="1424.0" y="394" text-anchor="middle" font-size="15" fill="#1F2430">tile the text EXACTLY:</text>
+<text x="1424.0" y="415" text-anchor="middle" font-size="15" fill="#1F2430">no gap, no overlap,</text>
+<text x="1424.0" y="436" text-anchor="middle" font-size="15" fill="#1F2430">nothing lost or changed</text>
+<rect x="976" y="330" width="272" height="118" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="1112.0" y="365" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">run-up (overlap)</text>
+<text x="1112.0" y="394" text-anchor="middle" font-size="15" fill="#1F2430">≤ 120 chars, ≤ max_chars ÷ 3</text>
+<text x="1112.0" y="415" text-anchor="middle" font-size="15" fill="#1F2430">starts at a sentence, else a word</text>
+<text x="1112.0" y="436" text-anchor="middle" font-size="15" fill="#1F2430">a tracked prefix, never a rewrite</text>
+<rect x="664" y="330" width="272" height="118" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="800.0" y="365" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">structure audit</text>
+<text x="800.0" y="394" text-anchor="middle" font-size="15" fill="#1F2430">coverage_exact · spans_contiguous</text>
+<text x="800.0" y="415" text-anchor="middle" font-size="15" fill="#1F2430">min / max size</text>
+<text x="800.0" y="436" text-anchor="middle" font-size="15" fill="#1F2430">deterministic: same cuts every run</text>
+<rect x="352" y="330" width="272" height="118" rx="12" fill="#FFFFFF" stroke="#8A94A6" stroke-width="1.5"/>
+<text x="488.0" y="365" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">--dry-run stops here</text>
+<text x="488.0" y="394" text-anchor="middle" font-size="14" font-family="Cascadia Mono, Consolas, Menlo, monospace" fill="#5B6472">*_preview.json</text>
+<text x="488.0" y="415" text-anchor="middle" font-size="15" fill="#5B6472">cuts + spans + run-ups</text>
+<text x="488.0" y="436" text-anchor="middle" font-size="15" fill="#5B6472">no model, no numbers</text>
+<rect x="40" y="330" width="272" height="118" rx="12" fill="#FCEDED" stroke="#B42A2A" stroke-width="2"/>
+<text x="176.0" y="365" text-anchor="middle" font-size="21" font-weight="700" fill="#8E1F1F">a failed audit</text>
+<text x="176.0" y="394" text-anchor="middle" font-size="15" fill="#8E1F1F">no CSV is written</text>
+<text x="176.0" y="415" text-anchor="middle" font-size="15" fill="#8E1F1F">the file is marked FAILED</text>
+<text x="176.0" y="436" text-anchor="middle" font-size="15" fill="#8E1F1F">exit code 2 or 3</text>
+<path d="M1424.0 258 L1424.0 322" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1288 389 L1256 389" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M976 389 L944 389" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M664 389 L632 389" fill="none" stroke="#5B6472" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#a)"/>
+<path d="M704 448 L704 482 L176.0 482 L176.0 456" fill="none" stroke="#B42A2A" stroke-width="2.5" marker-end="url(#r)"/>
+<text x="488.0" y="475" text-anchor="middle" font-size="15" fill="#B42A2A">fail</text>
+<rect x="664" y="520" width="272" height="118" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="800.0" y="555" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">embed</text>
+<text x="800.0" y="584" text-anchor="middle" font-size="15" fill="#1F2430">all-MiniLM-L6-v2 (local)</text>
+<text x="800.0" y="605" text-anchor="middle" font-size="15" fill="#1F2430">384 numbers per passage</text>
+<text x="800.0" y="626" text-anchor="middle" font-size="15" fill="#1F2430">normalized · --offline</text>
+<rect x="976" y="520" width="272" height="118" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="1112.0" y="555" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">token telemetry</text>
+<text x="1112.0" y="584" text-anchor="middle" font-size="15" fill="#1F2430">the model reads 256 tokens</text>
+<text x="1112.0" y="605" text-anchor="middle" font-size="15" fill="#1F2430">a longer passage is truncated</text>
+<text x="1112.0" y="626" text-anchor="middle" font-size="15" fill="#1F2430">→ WARN (Vault 2&#x27;s gate refuses it)</text>
+<rect x="1288" y="520" width="272" height="118" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="1424.0" y="555" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">vector audit</text>
+<text x="1424.0" y="584" text-anchor="middle" font-size="15" fill="#1F2430">one vector per passage</text>
+<text x="1424.0" y="605" text-anchor="middle" font-size="15" fill="#1F2430">384 numbers each</text>
+<text x="1424.0" y="626" text-anchor="middle" font-size="15" fill="#1F2430">no NaN, no infinity</text>
+<path d="M860.0 448 L860.0 512" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="870.0" y="504" text-anchor="start" font-size="15" font-weight="600" fill="#1F2430">pass</text>
+<path d="M936 579 L968 579" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1248 579 L1280 579" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="40" y="520" width="438" height="118" rx="12" fill="#FFFFFF" stroke="#8A94A6" stroke-width="1.5"/>
+<text x="259.0" y="554" text-anchor="middle" font-size="19" font-weight="700" fill="#1F2430">The 256-token window</text>
+<text x="259.0" y="583" text-anchor="middle" font-size="15" fill="#5B6472">checked, not cut by: cuts follow</text>
+<text x="259.0" y="604" text-anchor="middle" font-size="15" fill="#5B6472">structure, then telemetry warns</text>
+<text x="259.0" y="625" text-anchor="middle" font-size="15" fill="#5B6472">if a passage is too long to read</text>
+<rect x="1288" y="710" width="272" height="118" rx="12" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+<text x="1424.0" y="745" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">*_vectors.csv</text>
+<text x="1424.0" y="774" text-anchor="middle" font-size="15" fill="#5B6472">id · source_file · chunk_index</text>
+<text x="1424.0" y="795" text-anchor="middle" font-size="15" fill="#5B6472">created_utc · embedding_model</text>
+<text x="1424.0" y="816" text-anchor="middle" font-size="15" fill="#5B6472">vector_dim · text · vector_json</text>
+<rect x="976" y="710" width="272" height="118" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="1112.0" y="745" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">round-trip audit</text>
+<text x="1112.0" y="774" text-anchor="middle" font-size="15" fill="#1F2430">written atomically,</text>
+<text x="1112.0" y="795" text-anchor="middle" font-size="15" fill="#1F2430">then read back:</text>
+<text x="1112.0" y="816" text-anchor="middle" font-size="15" fill="#1F2430">rows and dims must match</text>
+<rect x="664" y="710" width="272" height="118" rx="12" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+<text x="800.0" y="745" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">*_manifest.json</text>
+<text x="800.0" y="774" text-anchor="middle" font-size="15" fill="#5B6472">one per file: hashes, spans,</text>
+<text x="800.0" y="795" text-anchor="middle" font-size="15" fill="#5B6472">run-ups, every check, telemetry</text>
+<text x="800.0" y="816" text-anchor="middle" font-size="15" fill="#5B6472">the receipt Vault 2 commits</text>
+<rect x="352" y="710" width="272" height="118" rx="12" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+<text x="488.0" y="745" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">*_run_manifest.json</text>
+<text x="488.0" y="774" text-anchor="middle" font-size="15" fill="#5B6472">run_id · config</text>
+<text x="488.0" y="795" text-anchor="middle" font-size="15" fill="#5B6472">passed / warned / failed</text>
+<text x="488.0" y="816" text-anchor="middle" font-size="15" fill="#5B6472">what the gates read first</text>
+<rect x="40" y="710" width="272" height="118" rx="12" fill="#1F2430" stroke="#1F2430" stroke-width="2"/>
+<text x="176.0" y="745" text-anchor="middle" font-size="21" font-weight="700" fill="#FFFFFF">[SUMMARY]</text>
+<text x="176.0" y="774" text-anchor="middle" font-size="14" font-family="Cascadia Mono, Consolas, Menlo, monospace" fill="#D7DCE4">passed=28 warned=0 failed=0</text>
+<text x="176.0" y="795" text-anchor="middle" font-size="15" fill="#D7DCE4">exit 0 = all passed</text>
+<text x="176.0" y="816" text-anchor="middle" font-size="15" fill="#D7DCE4">Vault 2, run 20261101_171405</text>
+<path d="M1424.0 638 L1424.0 702" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1288 769 L1256 769" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M976 769 L944 769" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M664 769 L632 769" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M352 769 L320 769" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="60" y="853" width="22" height="16" rx="4" fill="#FFFFFF" stroke="#8A94A6" stroke-width="1.5"/>
+<text x="90" y="866" text-anchor="start" font-size="14" fill="#5B6472">files and evidence</text>
+<rect x="236.79999999999998" y="853" width="22" height="16" rx="4" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="1.5"/>
+<text x="266.79999999999995" y="866" text-anchor="start" font-size="14" fill="#5B6472">a tool runs</text>
+<rect x="360.4" y="853" width="22" height="16" rx="4" fill="#FFF4EE" stroke="#B4532A" stroke-width="1.5"/>
+<text x="390.4" y="866" text-anchor="start" font-size="14" fill="#5B6472">you decide or write first</text>
+<rect x="590.4" y="853" width="22" height="16" rx="4" fill="#1F2430" stroke="#1F2430" stroke-width="1.5"/>
+<text x="620.4" y="866" text-anchor="start" font-size="14" fill="#5B6472">a verdict word</text>
+<rect x="736.8" y="853" width="22" height="16" rx="4" fill="#FCEDED" stroke="#B42A2A" stroke-width="1.5"/>
+<text x="766.8" y="866" text-anchor="start" font-size="14" fill="#5B6472">fails closed</text>
+</svg>

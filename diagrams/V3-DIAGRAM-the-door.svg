@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">
+  <title>Vault 3 · The Door: text crosses to the reader; only an issue crosses to GitHub</title>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#5B6472"/>
+    </marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#B4532A"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#FAF8F4"/>
+
+  <!-- title -->
+  <text x="60" y="66" font-size="34" font-weight="700" fill="#1F2430">Vault 3 · The Door</text>
+  <text x="60" y="100" font-size="20" fill="#5B6472">Text crosses to the reader. Only a proposal crosses to GitHub, and only after your sign-in.</text>
+
+  <!-- laptop boundary -->
+  <rect x="450" y="140" width="800" height="480" rx="18" fill="#EEF2F7" stroke="#8A94A6" stroke-width="2" stroke-dasharray="10 8"/>
+  <text x="474" y="174" font-size="18" font-weight="600" fill="#5B6472" letter-spacing="1">THE LAPTOP · SPOOKY · the librarian</text>
+
+  <!-- connectors -->
+  <g fill="none" stroke="#5B6472" stroke-width="2.5">
+    <path d="M290 360H482" marker-start="url(#a)" marker-end="url(#a)"/>
+    <path d="M790 300H912" marker-end="url(#a)"/>
+    <path d="M790 400H912" marker-end="url(#a)"/>
+    <path d="M710 450V492" marker-end="url(#a)"/>
+    <path d="M830 535H912" marker-end="url(#a)"/>
+  </g>
+  <g fill="none" stroke="#B4532A" stroke-width="3">
+    <path d="M560 450V722" marker-end="url(#g)"/>
+    <path d="M700 772H752" marker-end="url(#g)"/>
+    <path d="M1060 772H1122" marker-end="url(#g)"/>
+  </g>
+
+  <!-- the reader -->
+  <rect x="40" y="290" width="250" height="140" rx="14" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+  <text x="165" y="338" text-anchor="middle" font-size="24" font-weight="700" fill="#1F2430">Claude Desktop</text>
+  <text x="165" y="368" text-anchor="middle" font-size="18" fill="#5B6472">the reader</text>
+  <text x="165" y="394" text-anchor="middle" font-size="18" fill="#5B6472">its model runs in the cloud</text>
+
+  <!-- edge labels: MCP -->
+  <text x="370" y="342" text-anchor="middle" font-size="17" font-weight="600" fill="#1F2430">MCP · stdio</text>
+  <text x="370" y="388" text-anchor="middle" font-size="16" fill="#5B6472">text only,</text>
+  <text x="370" y="408" text-anchor="middle" font-size="16" fill="#5B6472">never vectors</text>
+
+  <!-- the door -->
+  <rect x="490" y="250" width="300" height="200" rx="14" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="3"/>
+  <text x="640" y="300" text-anchor="middle" font-size="28" font-weight="700" fill="#1F2430">novel_door</text>
+  <text x="640" y="334" text-anchor="middle" font-size="18" fill="#1F2430">MCP server · Arcade framework</text>
+  <text x="640" y="362" text-anchor="middle" font-size="18" fill="#1F2430">3 tools read · 1 tool proposes</text>
+  <text x="640" y="390" text-anchor="middle" font-size="18" fill="#1F2430">logs every call</text>
+  <text x="640" y="424" text-anchor="middle" font-size="15" fill="#2F5DA8">sees the book, not the SSOT</text>
+
+  <!-- index and chapters -->
+  <rect x="920" y="245" width="310" height="110" rx="14" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+  <text x="1075" y="285" text-anchor="middle" font-size="22" font-weight="700" fill="#1F2430">LanceDB index</text>
+  <text x="1075" y="313" text-anchor="middle" font-size="16" fill="#5B6472">29 passages · 384 numbers each</text>
+  <text x="1075" y="337" text-anchor="middle" font-size="16" fill="#5B6472">MiniLM · Vault 2 run 20261101_171405</text>
+  <text x="855" y="290" text-anchor="middle" font-size="16" fill="#5B6472">meaning</text>
+
+  <rect x="920" y="370" width="310" height="80" rx="14" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+  <text x="1075" y="405" text-anchor="middle" font-size="22" font-weight="700" fill="#1F2430">24 chapter files</text>
+  <text x="1075" y="431" text-anchor="middle" font-size="17" fill="#5B6472">read, never written</text>
+  <text x="855" y="390" text-anchor="middle" font-size="15" fill="#5B6472">keyword · read</text>
+
+  <!-- the record of what crossed -->
+  <rect x="590" y="500" width="240" height="80" rx="14" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+  <text x="710" y="535" text-anchor="middle" font-size="22" font-weight="700" fill="#1F2430">calls.jsonl</text>
+  <text x="710" y="561" text-anchor="middle" font-size="17" fill="#5B6472">every call, logged</text>
+
+  <rect x="920" y="500" width="310" height="80" rx="14" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+  <text x="1075" y="535" text-anchor="middle" font-size="22" font-weight="700" fill="#1F2430">DuckDB</text>
+  <text x="1075" y="561" text-anchor="middle" font-size="16" fill="#5B6472">audits what crossed · no vectors</text>
+
+  <!-- the door path (outside the laptop) -->
+  <text x="576" y="660" font-size="17" font-weight="600" fill="#B4532A">propose, after your sign-in</text>
+
+  <rect x="420" y="730" width="280" height="100" rx="14" fill="#FFF4EE" stroke="#B4532A" stroke-width="2.5"/>
+  <text x="560" y="770" text-anchor="middle" font-size="22" font-weight="700" fill="#1F2430">Arcade</text>
+  <text x="560" y="796" text-anchor="middle" font-size="16" fill="#5B6472">holds the GitHub sign-in</text>
+  <text x="560" y="816" text-anchor="middle" font-size="16" fill="#5B6472">token never reaches the model</text>
+
+  <text x="728" y="760" text-anchor="middle" font-size="16" fill="#B4532A">token</text>
+
+  <rect x="760" y="730" width="300" height="100" rx="14" fill="#FFF4EE" stroke="#B4532A" stroke-width="2.5"/>
+  <text x="910" y="770" text-anchor="middle" font-size="22" font-weight="700" fill="#1F2430">GitHub: novel-ssot</text>
+  <text x="910" y="796" text-anchor="middle" font-size="16" fill="#5B6472">an issue: a proposal,</text>
+  <text x="910" y="816" text-anchor="middle" font-size="16" fill="#5B6472">not a decision</text>
+
+  <text x="1092" y="760" text-anchor="middle" font-size="16" fill="#B4532A">read</text>
+
+  <rect x="1130" y="730" width="300" height="100" rx="14" fill="#1F2430"/>
+  <text x="1280" y="770" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">The author</text>
+  <text x="1280" y="796" text-anchor="middle" font-size="16" fill="#D7DCE4">declares: a commit</text>
+  <text x="1280" y="816" text-anchor="middle" font-size="16" fill="#D7DCE4">closes the issue</text>
+
+  <!-- thesis -->
+  <text x="1540" y="66" text-anchor="end" font-size="20" font-style="italic" fill="#1F2430">The laptop finds.</text>
+  <text x="1540" y="94" text-anchor="end" font-size="20" font-style="italic" fill="#1F2430">The model reads.</text>
+  <text x="1540" y="122" text-anchor="end" font-size="20" font-style="italic" fill="#1F2430">The author declares.</text>
+</svg>

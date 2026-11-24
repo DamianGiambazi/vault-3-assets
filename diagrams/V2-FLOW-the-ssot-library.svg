@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">
+<title>Vault 2 · The SSOT Library: data flow: Find the spine by meaning, seal the prediction first, declare the truth, then make it travel.</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5B6472"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#B42A2A"/></marker><marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#B4532A"/></marker></defs>
+<rect width="1600" height="900" fill="#FAF8F4"/>
+<text x="60" y="62" font-size="32" font-weight="700" fill="#1F2430">Vault 2 · The SSOT Library: data flow</text>
+<text x="60" y="94" font-size="19" fill="#5B6472">Find the spine by meaning, seal the prediction first, declare the truth, then make it travel.</text>
+<text x="1540" y="58" text-anchor="end" font-size="19" font-style="italic" fill="#1F2430">The machine proposes;</text>
+<text x="1540" y="84" text-anchor="end" font-size="19" font-style="italic" fill="#1F2430">the author declares.</text>
+<rect x="40" y="138" width="272" height="112" rx="12" fill="#FFF4EE" stroke="#B4532A" stroke-width="2.5"/>
+<text x="176.0" y="170" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">book\ + spine\</text>
+<text x="176.0" y="199" text-anchor="middle" font-size="15" fill="#5B6472">24 chapters + 4 questions</text>
+<text x="176.0" y="220" text-anchor="middle" font-size="15" fill="#5B6472">PREDICTION.md written first</text>
+<text x="176.0" y="241" text-anchor="middle" font-size="15" fill="#5B6472">(no content word shared)</text>
+<rect x="352" y="138" width="272" height="112" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="488.0" y="170" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">git commit: the seal</text>
+<text x="488.0" y="199" text-anchor="middle" font-size="15" fill="#1F2430">git as notary</text>
+<text x="488.0" y="220" text-anchor="middle" font-size="14" font-family="Cascadia Mono, Consolas, Menlo, monospace" fill="#1F2430">13913f5  16:02:34Z</text>
+<text x="488.0" y="241" text-anchor="middle" font-size="15" fill="#1F2430">before any run</text>
+<rect x="664" y="138" width="272" height="112" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="800.0" y="170" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">vector-snake --dry-run</text>
+<text x="800.0" y="199" text-anchor="middle" font-size="15" fill="#1F2430">cuts only, no numbers</text>
+<text x="800.0" y="220" text-anchor="middle" font-size="15" fill="#1F2430">28 files → 33 passages</text>
+<text x="800.0" y="241" text-anchor="middle" font-size="15" fill="#1F2430">every cut on a paragraph break</text>
+<rect x="976" y="138" width="272" height="112" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="1112.0" y="170" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">vector-snake (real run)</text>
+<text x="1112.0" y="199" text-anchor="middle" font-size="15" fill="#1F2430">--max-chars 800 --offline</text>
+<text x="1112.0" y="220" text-anchor="middle" font-size="14" font-family="Cascadia Mono, Consolas, Menlo, monospace" fill="#1F2430">20261101_171405</text>
+<text x="1112.0" y="241" text-anchor="middle" font-size="14" font-family="Cascadia Mono, Consolas, Menlo, monospace" fill="#1F2430">passed=28 warned=0</text>
+<rect x="1288" y="138" width="272" height="112" rx="12" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+<text x="1424.0" y="170" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">receipts\</text>
+<text x="1424.0" y="199" text-anchor="middle" font-size="15" fill="#5B6472">28 × vectors.csv (ignored by git)</text>
+<text x="1424.0" y="220" text-anchor="middle" font-size="15" fill="#5B6472">28 × manifest.json</text>
+<text x="1424.0" y="241" text-anchor="middle" font-size="15" fill="#5B6472">1 × run_manifest.json</text>
+<path d="M312 194 L344 194" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M624 194 L656 194" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M936 194 L968 194" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1248 194 L1280 194" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="1288" y="312" width="272" height="112" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="1424.0" y="344" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">DuckDB · gate.sql</text>
+<text x="1424.0" y="373" text-anchor="middle" font-size="15" fill="#1F2430">1 run · 1 model · 24 chapters</text>
+<text x="1424.0" y="394" text-anchor="middle" font-size="15" fill="#1F2430">nothing truncated</text>
+<text x="1424.0" y="415" text-anchor="middle" font-size="14" font-family="Cascadia Mono, Consolas, Menlo, monospace" fill="#1F2430">GATE_PASS  chunks=29</text>
+<rect x="976" y="312" width="272" height="112" rx="12" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+<text x="1112.0" y="344" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">corpus.parquet</text>
+<text x="1112.0" y="373" text-anchor="middle" font-size="15" fill="#5B6472">29 passages</text>
+<text x="1112.0" y="394" text-anchor="middle" font-size="15" fill="#5B6472">+ questions.parquet (4)</text>
+<text x="1112.0" y="415" text-anchor="middle" font-size="15" fill="#5B6472">same translator, same run</text>
+<rect x="664" y="312" width="272" height="112" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="800.0" y="344" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">spine_search.py</text>
+<text x="800.0" y="373" text-anchor="middle" font-size="15" fill="#1F2430">LanceDB · cosine distance</text>
+<text x="800.0" y="394" text-anchor="middle" font-size="15" fill="#1F2430">a chapter scores</text>
+<text x="800.0" y="415" text-anchor="middle" font-size="15" fill="#1F2430">its closest passage</text>
+<rect x="352" y="312" width="272" height="112" rx="12" fill="#1F2430" stroke="#1F2430" stroke-width="2"/>
+<text x="488.0" y="344" text-anchor="middle" font-size="21" font-weight="700" fill="#FFFFFF">SPINE_PARTIAL 1/4</text>
+<text x="488.0" y="373" text-anchor="middle" font-size="15" fill="#D7DCE4">the watcher: 1, 7, 24, 19 ✔</text>
+<text x="488.0" y="394" text-anchor="middle" font-size="15" fill="#D7DCE4">the lie, the cost, the door ✘</text>
+<text x="488.0" y="415" text-anchor="middle" font-size="15" fill="#D7DCE4">keyword &#x27;window&#x27;: 9 chapters</text>
+<rect x="40" y="312" width="272" height="112" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="176.0" y="344" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">seal-check.ps1</text>
+<text x="176.0" y="373" text-anchor="middle" font-size="15" fill="#1F2430">seal 16:02:34Z</text>
+<text x="176.0" y="394" text-anchor="middle" font-size="15" fill="#1F2430">run 16:14:05Z</text>
+<text x="176.0" y="415" text-anchor="middle" font-size="14" font-family="Cascadia Mono, Consolas, Menlo, monospace" fill="#1F2430">SEALED_BEFORE_RUN</text>
+<path d="M1424.0 250 L1424.0 304" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1288 368 L1256 368" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M976 368 L944 368" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M664 368 L632 368" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M352 368 L320 368" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M448.0 250 L448.0 280 L176.0 280 L176.0 304" fill="none" stroke="#5B6472" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#a)"/>
+<text x="188.0" y="274" text-anchor="start" font-size="14" fill="#5B6472">the commit time</text>
+<rect x="40" y="486" width="272" height="112" rx="12" fill="#FFF4EE" stroke="#B4532A" stroke-width="2.5"/>
+<text x="176.0" y="518" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">The author declares</text>
+<text x="176.0" y="547" text-anchor="middle" font-size="15" fill="#5B6472">SSOT.md + CONSTITUTION.md</text>
+<text x="176.0" y="568" text-anchor="middle" font-size="15" fill="#5B6472">the evidence, labelled as such</text>
+<text x="176.0" y="589" text-anchor="middle" font-size="15" fill="#5B6472">“similarity is not significance”</text>
+<rect x="352" y="486" width="272" height="112" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="488.0" y="518" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">git commit</text>
+<text x="488.0" y="547" text-anchor="middle" font-size="15" fill="#1F2430">SSOT + Constitution</text>
+<text x="488.0" y="568" text-anchor="middle" font-size="15" fill="#1F2430">+ 29 run receipts, no vectors</text>
+<text x="488.0" y="589" text-anchor="middle" font-size="14" font-family="Cascadia Mono, Consolas, Menlo, monospace" fill="#1F2430">131ee69  lock the spine</text>
+<rect x="664" y="486" width="272" height="112" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="800.0" y="518" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">GitHub · novel-ssot</text>
+<text x="800.0" y="547" text-anchor="middle" font-size="15" fill="#1F2430">first push, Public</text>
+<text x="800.0" y="568" text-anchor="middle" font-size="15" fill="#1F2430">git commits, GitHub carries</text>
+<text x="800.0" y="589" text-anchor="middle" font-size="15" fill="#1F2430">receipts in, vectors out</text>
+<rect x="976" y="486" width="272" height="112" rx="12" fill="#FFF4EE" stroke="#B4532A" stroke-width="2.5"/>
+<text x="1112.0" y="518" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">web edit → git pull</text>
+<text x="1112.0" y="547" text-anchor="middle" font-size="15" fill="#5B6472">Chapter 2 note, from the phone</text>
+<text x="1112.0" y="568" text-anchor="middle" font-size="14" font-family="Cascadia Mono, Consolas, Menlo, monospace" fill="#5B6472">74fd9a4  Fast-forward</text>
+<text x="1112.0" y="589" text-anchor="middle" font-size="15" fill="#5B6472">SSOT.md | 1 +</text>
+<rect x="1288" y="486" width="272" height="112" rx="12" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+<text x="1424.0" y="518" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">HANDOVER.md</text>
+<text x="1424.0" y="547" text-anchor="middle" font-size="15" fill="#5B6472">+ spine\INHERITANCE.md</text>
+<text x="1424.0" y="568" text-anchor="middle" font-size="15" fill="#5B6472">dc9e692, HEAD today</text>
+<text x="1424.0" y="589" text-anchor="middle" font-size="15" fill="#5B6472">what the next session needs</text>
+<path d="M176.0 424 L176.0 478" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M312 542 L344 542" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M624 542 L656 542" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M936 542 L968 542" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1248 542 L1280 542" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="40" y="660" width="272" height="112" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="176.0" y="692" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">git clone</text>
+<text x="176.0" y="721" text-anchor="middle" font-size="15" fill="#1F2430">a fresh copy from GitHub</text>
+<text x="176.0" y="742" text-anchor="middle" font-size="15" fill="#1F2430">29 receipts, no vectors</text>
+<text x="176.0" y="763" text-anchor="middle" font-size="15" fill="#1F2430">novel-ssot-clone</text>
+<rect x="352" y="660" width="272" height="112" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="488.0" y="692" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">vector-snake rebuild</text>
+<text x="488.0" y="721" text-anchor="middle" font-size="15" fill="#1F2430">same book, same settings</text>
+<text x="488.0" y="742" text-anchor="middle" font-size="15" fill="#1F2430">same model snapshot</text>
+<text x="488.0" y="763" text-anchor="middle" font-size="14" font-family="Cascadia Mono, Consolas, Menlo, monospace" fill="#1F2430">passed=28</text>
+<rect x="664" y="660" width="272" height="112" rx="12" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="2.5"/>
+<text x="800.0" y="692" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">DuckDB · compare.sql</text>
+<text x="800.0" y="721" text-anchor="middle" font-size="15" fill="#1F2430">cuts: text hashes + spans</text>
+<text x="800.0" y="742" text-anchor="middle" font-size="15" fill="#1F2430">numbers: min cosine</text>
+<text x="800.0" y="763" text-anchor="middle" font-size="15" fill="#1F2430">receipts vs rebuild</text>
+<rect x="976" y="660" width="272" height="112" rx="12" fill="#1F2430" stroke="#1F2430" stroke-width="2"/>
+<text x="1112.0" y="690" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">REBUILD_MATCHES_RECEIPT</text>
+<text x="1112.0" y="720" text-anchor="middle" font-size="14" font-family="Cascadia Mono, Consolas, Menlo, monospace" fill="#D7DCE4">CUTS_IDENTICAL  33</text>
+<text x="1112.0" y="740" text-anchor="middle" font-size="14" font-family="Cascadia Mono, Consolas, Menlo, monospace" fill="#D7DCE4">VECTORS_MATCH  1.0</text>
+<text x="1112.0" y="762" text-anchor="middle" font-size="15" fill="#D7DCE4">truth with a recipe travels</text>
+<rect x="1288" y="660" width="272" height="112" rx="12" fill="#FFF4EE" stroke="#B4532A" stroke-width="2.5"/>
+<text x="1424.0" y="692" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2430">The reload check</text>
+<text x="1424.0" y="721" text-anchor="middle" font-size="15" fill="#5B6472">a fresh chat, no memory</text>
+<text x="1424.0" y="742" text-anchor="middle" font-size="15" fill="#5B6472">reads 4 files and says</text>
+<text x="1424.0" y="763" text-anchor="middle" font-size="15" fill="#5B6472">what it doesn&#x27;t know</text>
+<path d="M800.0 598 L800.0 628 L176.0 628 L176.0 652" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M312 716 L344 716" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M624 716 L656 716" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M936 716 L968 716" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1424.0 598 L1424.0 652" fill="none" stroke="#5B6472" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="1434.0" y="634" text-anchor="start" font-size="14" fill="#5B6472">short video</text>
+<rect x="60" y="853" width="22" height="16" rx="4" fill="#FFFFFF" stroke="#8A94A6" stroke-width="1.5"/>
+<text x="90" y="866" text-anchor="start" font-size="14" fill="#5B6472">files and evidence</text>
+<rect x="236.79999999999998" y="853" width="22" height="16" rx="4" fill="#E3ECFA" stroke="#2F5DA8" stroke-width="1.5"/>
+<text x="266.79999999999995" y="866" text-anchor="start" font-size="14" fill="#5B6472">a tool runs</text>
+<rect x="360.4" y="853" width="22" height="16" rx="4" fill="#FFF4EE" stroke="#B4532A" stroke-width="1.5"/>
+<text x="390.4" y="866" text-anchor="start" font-size="14" fill="#5B6472">you decide or write first</text>
+<rect x="590.4" y="853" width="22" height="16" rx="4" fill="#1F2430" stroke="#1F2430" stroke-width="1.5"/>
+<text x="620.4" y="866" text-anchor="start" font-size="14" fill="#5B6472">a verdict word</text>
+<rect x="736.8" y="853" width="22" height="16" rx="4" fill="#FCEDED" stroke="#B42A2A" stroke-width="1.5"/>
+<text x="766.8" y="866" text-anchor="start" font-size="14" fill="#5B6472">fails closed</text>
+</svg>
